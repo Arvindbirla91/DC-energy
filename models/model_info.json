@@ -1,0 +1,51 @@
+{
+  "best_model": "Gradient Boosting",
+  "target_column": "power_capacity_MW",
+  "feature_names": [
+    "total_data_centers",
+    "avg_renewable_energy_pct",
+    "growth_rate_pct",
+    "avg_latency_ms",
+    "internet_penetration_pct",
+    "renewable_capacity_MW",
+    "colocation_ratio",
+    "hyperscale_ratio",
+    "country_encoded",
+    "climate_Arid",
+    "climate_Cold",
+    "climate_Continental",
+    "climate_Mediterranean",
+    "climate_Temperate",
+    "climate_Tropical"
+  ],
+  "metrics": {
+    "model": "Gradient Boosting",
+    "MAE": 57.604,
+    "MSE": 22706.3922,
+    "RMSE": 150.6864,
+    "R2": 0.4062
+  },
+  "all_results": [
+    {
+      "model": "Linear Regression",
+      "MAE": 182.1151,
+      "MSE": 80339.6686,
+      "RMSE": 283.4425,
+      "R2": -1.1009
+    },
+    {
+      "model": "Random Forest",
+      "MAE": 74.5988,
+      "MSE": 24900.4847,
+      "RMSE": 157.7989,
+      "R2": 0.3489
+    },
+    {
+      "model": "Gradient Boosting",
+      "MAE": 57.604,
+      "MSE": 22706.3922,
+      "RMSE": 150.6864,
+      "R2": 0.4062
+    }
+  ]
+}

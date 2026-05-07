@@ -1,5 +1,5 @@
 """
-app.py — Main Streamlit entry point. Run: streamlit run app.py
+Run: streamlit run app.py
 """
 import streamlit as st
 import os
@@ -16,7 +16,7 @@ st.set_page_config(
 from nav import render_nav
 render_nav()
 
-# ── Landing Hero ──────────────────────────────────────────────────────
+# ─Our Landing Hero ──────────────────────────────────────────────────────
 st.markdown("""
 <div style="text-align:center; padding: 3.5rem 2rem 1.5rem 2rem;">
     <div style="font-size:3.8rem; margin-bottom:0.8rem;">⚡</div>
@@ -33,7 +33,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ── Feature Cards ─────────────────────────────────────────────────────
+# ─ Feature Cards ─────────────────────────────────────────────────────
 col1, col2, col3 = st.columns(3)
 
 cards = [

@@ -1,10 +1,6 @@
-"""
-nav.py — Shared navigation bar with light/dark theme toggle.
-Import and call render_nav() at the top of every page.
-"""
+
 import streamlit as st
 
-# ── Theme Definitions ─────────────────────────────────────────────────
 DARK = {
     "bg":         "#0d0d1a",
     "bg2":        "#111122",
@@ -58,9 +54,8 @@ LIGHT = {
 def get_theme():
     """Return current theme dict from session_state."""
     if "theme" not in st.session_state:
-        st.session_state.theme = "dark"
+        st.session_state.theme = "light"
     return DARK if st.session_state.theme == "dark" else LIGHT
-
 
 def inject_theme_css(t):
     """Inject full global theme CSS."""
